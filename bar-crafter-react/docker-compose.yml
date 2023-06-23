@@ -1,0 +1,11 @@
+version: "3"
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bar-crafter-react
+    ports:
+      - "5174:5173"
+    volumes:
+      - ./:/app
